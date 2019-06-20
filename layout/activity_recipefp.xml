@@ -1,0 +1,576 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.admin.easyeats.ChickenCasseroleActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="274dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="276dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/foodImg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/fishpie" />
+
+                <ImageButton
+                    android:id="@+id/pastagray2"
+                    android:layout_width="360dp"
+                    android:layout_height="50dp"
+                    android:layout_above="@+id/meal"
+                    android:layout_alignLeft="@+id/foodImg"
+                    android:layout_alignStart="@+id/foodImg"
+                    android:background="@null"
+                    app:srcCompat="@drawable/graylong"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="423dp" />
+
+                <TextView
+                    android:id="@+id/Name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/pastagray2"
+                    android:layout_alignLeft="@+id/foodImg"
+                    android:layout_alignStart="@+id/foodImg"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginStart="12dp"
+                    android:text="Fish Pie"
+                    android:textColor="@android:color/white"
+                    android:textSize="24sp" />
+
+                <ImageButton
+                    android:id="@+id/staroff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/foodImg"
+                    android:layout_alignRight="@+id/foodImg"
+                    android:layout_alignTop="@+id/Name"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@null"
+                    app:srcCompat="@android:drawable/star_big_off" />
+
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/difficulty"
+                    android:layout_alignBottom="@+id/difficulty"
+                    android:layout_alignEnd="@+id/ingredientsbtn"
+                    android:layout_alignRight="@+id/ingredientsbtn"
+                    android:layout_marginEnd="21dp"
+                    android:layout_marginRight="21dp"
+                    android:text="60 Mins"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/meal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/foodImg"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_toLeftOf="@+id/staroff"
+                    android:layout_toStartOf="@+id/staroff"
+                    android:text="Dinner"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/difficulty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/meal"
+                    android:layout_alignBottom="@+id/meal"
+                    android:layout_toEndOf="@+id/ingredientsbtn"
+                    android:layout_toRightOf="@+id/ingredientsbtn"
+                    android:text="Medium"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/serves"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/meal"
+                    android:layout_alignBottom="@+id/meal"
+                    android:layout_alignEnd="@+id/staroff"
+                    android:layout_alignRight="@+id/staroff"
+                    android:text="6"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/ingredientsbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/methodbtn"
+                    android:layout_alignBottom="@+id/methodbtn"
+                    android:layout_toEndOf="@+id/category"
+                    android:layout_toRightOf="@+id/category"
+                    android:text="ingredients"
+                    android:visibility="visible" />
+
+                <Button
+                    android:id="@+id/methodbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toLeftOf="@+id/staroff"
+                    android:layout_toStartOf="@+id/staroff"
+                    android:text="Method" />
+
+                <TextView
+                    android:id="@+id/category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/time"
+                    android:layout_alignBottom="@+id/time"
+                    android:layout_alignLeft="@+id/Name"
+                    android:layout_alignStart="@+id/Name"
+                    android:text="Fish"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ViewSwitcher
+                android:id="@+id/viewswitcher"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <ImageView
+                                        android:id="@+id/imageView10"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="45dp"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_alignParentStart="true"
+                                        android:layout_marginTop="12dp"
+                                        app:srcCompat="@drawable/graylong" />
+
+                                    <TextView
+                                        android:id="@+id/Ingredient1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignBottom="@+id/imageView10"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_alignParentStart="true"
+                                        android:layout_marginBottom="8dp"
+                                        android:layout_marginLeft="42dp"
+                                        android:layout_marginStart="42dp"
+                                        android:text="Fish"
+                                        android:textColor="@android:color/black"
+                                        android:textSize="18sp" />
+
+                                    <TextView
+                                        android:id="@+id/textView"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignBottom="@+id/Ingredient1"
+                                        android:layout_alignParentEnd="true"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_marginEnd="25dp"
+                                        android:layout_marginRight="25dp"
+                                        android:text="1 pack"
+                                        android:textColor="@android:color/background_dark" />
+
+                                </RelativeLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <ImageView
+                                        android:id="@+id/imageView29"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="45dp"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_alignParentStart="true"
+                                        android:layout_below="@+id/imageView6"
+                                        android:layout_marginTop="42dp"
+                                        app:srcCompat="@drawable/graylong" />
+
+                                    <TextView
+                                        android:id="@+id/Ingredient2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignLeft="@+id/Ingredient3"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_alignStart="@+id/Ingredient3"
+                                        android:layout_marginTop="8dp"
+                                        android:text="Potato"
+                                        android:textColor="@android:color/black"
+                                        android:textSize="18sp" />
+
+                                    <TextView
+                                        android:id="@+id/Ingredient3"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentBottom="true"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_alignParentStart="true"
+                                        android:layout_marginBottom="9dp"
+                                        android:layout_marginLeft="34dp"
+                                        android:layout_marginStart="34dp"
+                                        android:text=" butter"
+                                        android:textColor="@android:color/black"
+                                        android:textSize="18sp" />
+
+                                    <TextView
+                                        android:id="@+id/textView3"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignBottom="@+id/Ingredient2"
+                                        android:layout_alignParentEnd="true"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_marginEnd="28dp"
+                                        android:layout_marginRight="28dp"
+                                        android:text="1 kg"
+                                        android:textColor="@android:color/background_dark" />
+
+                                    <TextView
+                                        android:id="@+id/textView15"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignBottom="@+id/Ingredient3"
+                                        android:layout_alignEnd="@+id/textView3"
+                                        android:layout_alignRight="@+id/textView3"
+                                        android:text="25g"
+                                        android:textColor="@android:color/background_dark" />
+
+                                </RelativeLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <ImageView
+                                        android:id="@+id/imageView26"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="45dp"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_alignParentStart="true"
+                                        android:layout_below="@+id/imageView6"
+                                        android:layout_marginTop="42dp"
+                                        app:srcCompat="@drawable/graylong" />
+
+                                    <TextView
+                                        android:id="@+id/Ingredient4"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentBottom="true"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_alignParentStart="true"
+                                        android:layout_marginBottom="10dp"
+                                        android:layout_marginLeft="27dp"
+                                        android:layout_marginStart="27dp"
+                                        android:text="Milk"
+                                        android:textColor="@android:color/black"
+                                        android:textSize="18sp" />
+
+                                    <TextView
+                                        android:id="@+id/Ingredient5"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignLeft="@+id/Ingredient4"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_alignStart="@+id/Ingredient4"
+                                        android:layout_marginTop="10dp"
+                                        android:text="Onion"
+                                        android:textColor="@android:color/black"
+                                        android:textSize="18sp" />
+
+                                    <TextView
+                                        android:id="@+id/textView18"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentEnd="true"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_alignTop="@+id/Ingredient5"
+                                        android:layout_marginEnd="30dp"
+                                        android:layout_marginRight="30dp"
+                                        android:text="Spring 4"
+                                        android:textColor="@android:color/background_dark" />
+
+                                    <TextView
+                                        android:id="@+id/textView19"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignBottom="@+id/Ingredient4"
+                                        android:layout_alignEnd="@+id/textView18"
+                                        android:layout_alignRight="@+id/textView18"
+                                        android:text="Splash"
+                                        android:textColor="@android:color/background_dark" />
+
+                                </RelativeLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:id="@+id/ingredient7"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_alignParentStart="true"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_marginLeft="32dp"
+                                        android:layout_marginStart="32dp"
+                                        android:layout_marginTop="10dp"
+                                        android:text="Cheese"
+                                        android:textColor="@android:color/black"
+                                        android:textSize="18sp" />
+
+                                    <TextView
+                                        android:id="@+id/textView20"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentEnd="true"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_alignTop="@+id/ingredient7"
+                                        android:layout_marginEnd="28dp"
+                                        android:layout_marginRight="28dp"
+                                        android:text="Handful"
+                                        android:textColor="@android:color/background_dark" />
+
+                                </RelativeLayout>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </ScrollView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:id="@+id/Method1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_alignParentStart="true"
+                                        android:layout_marginTop="20dp"
+                                        android:text="1. Preheat the oven to 200C/180 fan/gas mark 6."
+                                        android:textColor="@android:color/black"
+                                        android:textSize="18sp" />
+
+                                </RelativeLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:id="@+id/Method2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_marginTop="20dp"
+                                        android:text="2. Put the potatoes in a saucepan and pour over enough water to cover them. Bring to the boil and then simmer until tender. When cooked, drain thoroughly and mash with a splash of milk and some butter. Season with ground black pepper."
+                                        android:textColor="@android:color/black"
+                                        android:textSize="18sp" />
+
+                                </RelativeLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:id="@+id/Method3"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentBottom="true"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_alignParentStart="true"
+                                        android:layout_marginTop="20dp"
+                                        android:text="3. Put the butter, flour and spring onions in another pan and heat gently until the butter has melted, stirring regularly. Cook for 1 -2 mins. Gradually whisk in the milk using a balloon whisk if you have one. Bring to the boil, stirring to avoid any lumps and sticking at the bottom of the pan. Cook for 3 – 4 minutes until thickened."
+                                        android:textColor="@android:color/black"
+                                        android:textSize="18sp" />
+
+                                </RelativeLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignEnd="@+id/textView18"
+                                    android:layout_alignRight="@+id/textView18"
+                                    android:layout_below="@+id/textView18">
+
+                                    <TextView
+                                        android:id="@+id/Method4"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="20dp"
+                                        android:text="4. Take off the heat and stir in the cheese (if using), fish, mustard, chives, sweetcorn and peas. Spoon into an ovenproof dish or 6- 8 ramekins."
+                                        android:textColor="@android:color/black"
+                                        android:textSize="18sp" />
+
+                                </RelativeLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:id="@+id/Method5"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="20dp"
+                                        android:text="5. Spoon the potato on top and sprinkle with cheddar cheese."
+                                        android:textColor="@android:color/black"
+                                        android:textSize="18sp" />
+
+                                </RelativeLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:id="@+id/Method6"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="20dp"
+                                        android:text="6. Pop in the oven for 20 - 25 mins or until golden and bubbling at the edges. Alternatively, cover and freeze the pie or mini pies for another time."
+                                        android:textColor="@android:color/black"
+                                        android:textSize="18sp" />
+
+                                </RelativeLayout>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </ScrollView>
+                </RelativeLayout>
+
+            </ViewSwitcher>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

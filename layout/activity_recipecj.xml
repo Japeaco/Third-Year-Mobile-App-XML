@@ -1,0 +1,673 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.admin.easyeats.ChickenCasseroleActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="274dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="276dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/foodImg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/chickenjalfrezi" />
+
+                <ImageButton
+                    android:id="@+id/pastagray2"
+                    android:layout_width="360dp"
+                    android:layout_height="50dp"
+                    android:layout_above="@+id/meal"
+                    android:layout_alignLeft="@+id/foodImg"
+                    android:layout_alignStart="@+id/foodImg"
+                    android:background="@null"
+                    app:srcCompat="@drawable/graylong"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="423dp" />
+
+                <TextView
+                    android:id="@+id/Name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/pastagray2"
+                    android:layout_alignLeft="@+id/foodImg"
+                    android:layout_alignStart="@+id/foodImg"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginStart="12dp"
+                    android:text="Chicken jalfrezi"
+                    android:textColor="@android:color/white"
+                    android:textSize="24sp" />
+
+                <ImageButton
+                    android:id="@+id/staroff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/foodImg"
+                    android:layout_alignRight="@+id/foodImg"
+                    android:layout_alignTop="@+id/Name"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@null"
+                    app:srcCompat="@android:drawable/star_big_off" />
+
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/difficulty"
+                    android:layout_alignBottom="@+id/difficulty"
+                    android:layout_alignEnd="@+id/Name"
+                    android:layout_alignRight="@+id/Name"
+                    android:text="15 Mins"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/meal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/foodImg"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="19dp"
+                    android:layout_toLeftOf="@+id/serves"
+                    android:layout_toStartOf="@+id/serves"
+                    android:text="Dinner"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/difficulty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/meal"
+                    android:layout_alignBottom="@+id/meal"
+                    android:layout_toEndOf="@+id/ingredientsbtn"
+                    android:layout_toRightOf="@+id/ingredientsbtn"
+                    android:text="Easy"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/serves"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/time"
+                    android:layout_alignBottom="@+id/time"
+                    android:layout_toEndOf="@+id/methodbtn"
+                    android:layout_toRightOf="@+id/methodbtn"
+                    android:text="4"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/ingredientsbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/methodbtn"
+                    android:layout_alignBottom="@+id/methodbtn"
+                    android:layout_toEndOf="@+id/category"
+                    android:layout_toRightOf="@+id/category"
+                    android:text="ingredients"
+                    android:visibility="visible" />
+
+                <Button
+                    android:id="@+id/methodbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toLeftOf="@+id/staroff"
+                    android:layout_toStartOf="@+id/staroff"
+                    android:text="Method" />
+
+                <TextView
+                    android:id="@+id/category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/time"
+                    android:layout_alignBottom="@+id/time"
+                    android:layout_alignLeft="@+id/Name"
+                    android:layout_alignStart="@+id/Name"
+                    android:text="Chicken"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ViewSwitcher
+                android:id="@+id/viewswitcher"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <ImageView
+                                        android:id="@+id/imageView10"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="45dp"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_alignParentStart="true"
+                                        android:layout_marginTop="12dp"
+                                        app:srcCompat="@drawable/graylong" />
+
+                                    <TextView
+                                        android:id="@+id/Ingredient1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignBottom="@+id/imageView10"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_alignParentStart="true"
+                                        android:layout_marginBottom="8dp"
+                                        android:layout_marginLeft="41dp"
+                                        android:layout_marginStart="41dp"
+                                        android:text="Chicken"
+                                        android:textColor="@android:color/black"
+                                        android:textSize="18sp" />
+
+                                    <TextView
+                                        android:id="@+id/textView"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignBottom="@+id/Ingredient1"
+                                        android:layout_alignParentEnd="true"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_marginEnd="25dp"
+                                        android:layout_marginRight="25dp"
+                                        android:text="2-3 breasts"
+                                        android:textColor="@android:color/background_dark" />
+
+                                </RelativeLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <ImageView
+                                        android:id="@+id/imageView29"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="45dp"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_alignParentStart="true"
+                                        android:layout_below="@+id/imageView6"
+                                        android:layout_marginTop="42dp"
+                                        app:srcCompat="@drawable/graylong" />
+
+                                    <TextView
+                                        android:id="@+id/Ingredient2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignLeft="@+id/Ingredient3"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_alignStart="@+id/Ingredient3"
+                                        android:layout_marginTop="8dp"
+                                        android:text="Tomato"
+                                        android:textColor="@android:color/black"
+                                        android:textSize="18sp" />
+
+                                    <TextView
+                                        android:id="@+id/Ingredient3"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentBottom="true"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_alignParentStart="true"
+                                        android:layout_marginBottom="9dp"
+                                        android:layout_marginLeft="34dp"
+                                        android:layout_marginStart="34dp"
+                                        android:text="Onion"
+                                        android:textColor="@android:color/black"
+                                        android:textSize="18sp" />
+
+                                    <TextView
+                                        android:id="@+id/textView3"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignBottom="@+id/Ingredient2"
+                                        android:layout_alignParentEnd="true"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_marginEnd="28dp"
+                                        android:layout_marginRight="28dp"
+                                        android:text="Plum 400g"
+                                        android:textColor="@android:color/background_dark" />
+
+                                    <TextView
+                                        android:id="@+id/textView15"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignBottom="@+id/Ingredient3"
+                                        android:layout_alignEnd="@+id/textView3"
+                                        android:layout_alignRight="@+id/textView3"
+                                        android:text="1/2"
+                                        android:textColor="@android:color/background_dark" />
+
+                                </RelativeLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <ImageView
+                                        android:id="@+id/imageView26"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="45dp"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_alignParentStart="true"
+                                        android:layout_below="@+id/imageView6"
+                                        android:layout_marginTop="42dp"
+                                        app:srcCompat="@drawable/graylong" />
+
+                                    <TextView
+                                        android:id="@+id/Ingredient4"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentBottom="true"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_alignParentStart="true"
+                                        android:layout_marginBottom="10dp"
+                                        android:layout_marginLeft="27dp"
+                                        android:layout_marginStart="27dp"
+                                        android:text="Cumin"
+                                        android:textColor="@android:color/black"
+                                        android:textSize="18sp" />
+
+                                    <TextView
+                                        android:id="@+id/Ingredient5"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignLeft="@+id/Ingredient4"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_alignStart="@+id/Ingredient4"
+                                        android:layout_marginTop="10dp"
+                                        android:text="Garlic"
+                                        android:textColor="@android:color/black"
+                                        android:textSize="18sp" />
+
+                                    <TextView
+                                        android:id="@+id/textView18"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentEnd="true"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_alignTop="@+id/Ingredient5"
+                                        android:layout_marginEnd="30dp"
+                                        android:layout_marginRight="30dp"
+                                        android:text="2"
+                                        android:textColor="@android:color/background_dark" />
+
+                                    <TextView
+                                        android:id="@+id/textView19"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignBottom="@+id/Ingredient4"
+                                        android:layout_alignEnd="@+id/textView18"
+                                        android:layout_alignRight="@+id/textView18"
+                                        android:text="1tbsp"
+                                        android:textColor="@android:color/background_dark" />
+
+                                </RelativeLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignEnd="@+id/textView18"
+                                    android:layout_alignRight="@+id/textView18"
+                                    android:layout_below="@+id/textView18">
+
+                                    <ImageView
+                                        android:id="@+id/imageView33"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="45dp"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_alignParentStart="true"
+                                        android:layout_below="@+id/imageView7"
+                                        android:layout_marginTop="42dp"
+                                        app:srcCompat="@drawable/graylong" />
+
+                                    <TextView
+                                        android:id="@+id/ingredient6"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignLeft="@+id/ingredient7"
+                                        android:layout_alignStart="@+id/ingredient7"
+                                        android:layout_alignTop="@+id/imageView33"
+                                        android:layout_marginTop="9dp"
+                                        android:text="Turmeric"
+                                        android:textColor="@android:color/black"
+                                        android:textSize="18sp" />
+
+                                    <TextView
+                                        android:id="@+id/ingredient7"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_alignParentStart="true"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_marginLeft="32dp"
+                                        android:layout_marginStart="32dp"
+                                        android:layout_marginTop="10dp"
+                                        android:text="Chillies"
+                                        android:textColor="@android:color/black"
+                                        android:textSize="18sp" />
+
+                                    <TextView
+                                        android:id="@+id/textView20"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentEnd="true"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_alignTop="@+id/ingredient7"
+                                        android:layout_marginEnd="28dp"
+                                        android:layout_marginRight="28dp"
+                                        android:text="1"
+                                        android:textColor="@android:color/background_dark" />
+
+                                    <TextView
+                                        android:id="@+id/textView21"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignBottom="@+id/ingredient6"
+                                        android:layout_alignEnd="@+id/textView20"
+                                        android:layout_alignRight="@+id/textView20"
+                                        android:text="1tbsp"
+                                        android:textColor="@android:color/background_dark" />
+
+                                </RelativeLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <ImageView
+                                        android:id="@+id/imageView34"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="45dp"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_alignParentStart="true"
+                                        android:layout_below="@+id/imageView7"
+                                        android:layout_marginTop="42dp"
+                                        app:srcCompat="@drawable/graylong" />
+
+                                    <TextView
+                                        android:id="@+id/ingredient8"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignLeft="@+id/ingredient9"
+                                        android:layout_alignStart="@+id/ingredient9"
+                                        android:layout_alignTop="@+id/imageView34"
+                                        android:layout_marginTop="9dp"
+                                        android:text="Vegetable oil"
+                                        android:textColor="@android:color/black"
+                                        android:textSize="18sp" />
+
+                                    <TextView
+                                        android:id="@+id/ingredient9"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_alignParentStart="true"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_marginLeft="32dp"
+                                        android:layout_marginStart="32dp"
+                                        android:layout_marginTop="10dp"
+                                        android:text="Pepper"
+                                        android:textColor="@android:color/black"
+                                        android:textSize="18sp" />
+
+                                    <TextView
+                                        android:id="@+id/textView22"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignBottom="@+id/ingredient9"
+                                        android:layout_alignParentEnd="true"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_marginEnd="25dp"
+                                        android:layout_marginRight="25dp"
+                                        android:text="1"
+                                        android:textColor="@android:color/background_dark" />
+
+                                </RelativeLayout>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </ScrollView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:id="@+id/Method1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_alignParentStart="true"
+                                        android:layout_marginBottom="8dp"
+                                        android:layout_marginLeft="41dp"
+                                        android:layout_marginStart="41dp"
+                                        android:text="Take the chopped chicken and coat it in the cumin, ground coriander and turmeric then leave it to marinade in the fridge while you make the sauce."
+                                        android:textColor="@android:color/black"
+                                        android:textSize="18sp" />
+
+                                </RelativeLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:id="@+id/Method2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_marginTop="8dp"
+                                        android:text="To make the sauce, fry the onion with the garlic and green chilli in a large pan, for around 5 mins, until browned. Add 300ml water to the onion mixture and simmer for around 20 minutes."
+                                        android:textColor="@android:color/black"
+                                        android:textSize="18sp" />
+
+                                </RelativeLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:id="@+id/Method3"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentBottom="true"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_alignParentStart="true"
+                                        android:layout_marginBottom="10dp"
+                                        android:layout_marginLeft="27dp"
+                                        android:layout_marginStart="27dp"
+                                        android:text="Meanwhile, put the plum tomatoes in a food processor and give it a good whizz (aim for a smooth consistency). Heat another large pan and gently fry the ground coriander, cumin and turmeric in a splash of oil for about a minute. Add the tomatoes to this pan and simmer for around 10 minutes."
+                                        android:textColor="@android:color/black"
+                                        android:textSize="18sp" />
+
+                                </RelativeLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignEnd="@+id/textView18"
+                                    android:layout_alignRight="@+id/textView18"
+                                    android:layout_below="@+id/textView18">
+
+                                    <TextView
+                                        android:id="@+id/Method4"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="9dp"
+                                        android:text="Next, whizz your onion mixture in the food processor and add it to the spiced tomato sauce. Season generously, stir, then simmer for 20 minutes. You can make large batches of this sauce and freeze it for later use."
+                                        android:textColor="@android:color/black"
+                                        android:textSize="18sp" />
+
+                                </RelativeLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:id="@+id/Method5"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="9dp"
+                                        android:text="Fry the marinated chicken in oil and stir continuously. After a few minutes, turn down the heat and add the other half of the onion, the red pepper and chillis. Stir until the onions and pepper soften (and the chicken is cooked, of course)."
+                                        android:textColor="@android:color/black"
+                                        android:textSize="18sp" />
+
+                                </RelativeLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:id="@+id/Method6"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="9dp"
+                                        android:text="Add the sauce you prepared earlier to the cooked chicken and simmer for around 10-20 minutes, adding a splash of water if it gets too thick. Just before you dish it up, stir in the garam masala and chopped coriander leaves. Serve with basmati rice or naan bread."
+                                        android:textColor="@android:color/black"
+                                        android:textSize="18sp" />
+
+                                </RelativeLayout>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </ScrollView>
+                </RelativeLayout>
+
+            </ViewSwitcher>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

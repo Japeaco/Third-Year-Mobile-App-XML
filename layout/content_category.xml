@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.admin.easyeats.CategoryActivity"
+    tools:showIn="@layout/app_bar_category">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/buttonPasta"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@null"
+                        app:srcCompat="@drawable/pastalong" />
+
+                    <ImageButton
+                        android:id="@+id/pastagray"
+                        android:layout_width="360dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:background="@null"
+                        app:srcCompat="@drawable/graylong"
+                        tools:layout_editor_absoluteX="0dp"
+                        tools:layout_editor_absoluteY="423dp" />
+
+                    <TextView
+                        android:id="@+id/categoryPasta"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/pastagray"
+                        android:layout_alignLeft="@+id/pastagray"
+                        android:layout_alignStart="@+id/pastagray"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginStart="8dp"
+                        android:text="Pasta"
+                        android:textColor="@android:color/white"
+                        android:textSize="24sp"
+                        tools:text="@string/Pasta" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/buttonFish"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:background="@null"
+                        app:srcCompat="@drawable/fishlong" />
+
+                    <ImageButton
+                        android:id="@+id/fishgray"
+                        android:layout_width="360dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:background="@null"
+                        app:srcCompat="@drawable/graylong" />
+
+                    <TextView
+                        android:id="@+id/categoryFish"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/buttonFish"
+                        android:layout_alignStart="@+id/buttonFish"
+                        android:layout_alignTop="@+id/fishgray"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Fish"
+                        android:textColor="@android:color/white"
+                        android:textSize="24sp"
+                        tools:text="@string/Fish" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/buttonBeef"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:background="@null"
+                        app:srcCompat="@drawable/burgerlong" />
+
+                    <ImageButton
+                        android:id="@+id/beefgray"
+                        android:layout_width="360dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:background="@null"
+                        app:srcCompat="@drawable/graylong"
+                        tools:layout_editor_absoluteX="0dp"
+                        tools:layout_editor_absoluteY="423dp" />
+
+                    <TextView
+                        android:id="@+id/categoryBeef"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/beefgray"
+                        android:layout_alignLeft="@+id/buttonBeef"
+                        android:layout_alignStart="@+id/buttonBeef"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="13dp"
+                        android:layout_marginStart="13dp"
+                        android:text="Beef"
+                        android:textColor="@android:color/white"
+                        android:textSize="24sp"
+                        tools:text="@string/Beef" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/buttonChicken"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:background="@null"
+                        app:srcCompat="@drawable/chickenlong" />
+
+                    <ImageButton
+                        android:id="@+id/chickengray"
+                        android:layout_width="360dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:background="@null"
+                        app:srcCompat="@drawable/graylong"
+                        tools:layout_editor_absoluteX="0dp"
+                        tools:layout_editor_absoluteY="423dp" />
+
+                    <TextView
+                        android:id="@+id/categoryChicken"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/buttonChicken"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignStart="@+id/buttonChicken"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="9dp"
+                        android:layout_marginStart="9dp"
+                        android:text="Chicken"
+                        android:textColor="@android:color/white"
+                        android:textSize="24sp"
+                        tools:text="@string/Chicken" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/buttonLamb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:background="@null"
+                        app:srcCompat="@drawable/lamblong" />
+
+                    <ImageButton
+                        android:id="@+id/lambgray"
+                        android:layout_width="360dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:background="@null"
+                        app:srcCompat="@drawable/graylong"
+                        tools:layout_editor_absoluteX="0dp"
+                        tools:layout_editor_absoluteY="423dp" />
+
+                    <TextView
+                        android:id="@+id/categoryLamb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/buttonLamb"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignStart="@+id/buttonLamb"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginStart="12dp"
+                        android:text="Lamb"
+                        android:textColor="@android:color/white"
+                        android:textSize="24sp"
+                        tools:text="@string/Lamb" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/buttonEggs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:background="@null"
+                        app:srcCompat="@drawable/egglong" />
+
+                    <ImageButton
+                        android:id="@+id/eggsgray"
+                        android:layout_width="360dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:background="@null"
+                        app:srcCompat="@drawable/graylong"
+                        tools:layout_editor_absoluteX="0dp"
+                        tools:layout_editor_absoluteY="423dp" />
+
+                    <TextView
+                        android:id="@+id/categoryEggs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/buttonEggs"
+                        android:layout_alignStart="@+id/buttonEggs"
+                        android:layout_alignTop="@+id/eggsgray"
+                        android:layout_marginLeft="9dp"
+                        android:layout_marginStart="9dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Eggs"
+                        android:textColor="@android:color/white"
+                        android:textSize="24sp"
+                        tools:text="@string/Eggs" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/buttonPork"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:background="@null"
+                        app:srcCompat="@drawable/porklong" />
+
+                    <ImageButton
+                        android:id="@+id/porkgray"
+                        android:layout_width="360dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:background="@null"
+                        app:srcCompat="@drawable/graylong"
+                        tools:layout_editor_absoluteX="0dp"
+                        tools:layout_editor_absoluteY="423dp" />
+
+                    <TextView
+                        android:id="@+id/categoryPork"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/buttonPork"
+                        android:layout_alignStart="@+id/buttonPork"
+                        android:layout_alignTop="@+id/porkgray"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Pork"
+                        android:textColor="@android:color/white"
+                        android:textSize="24sp"
+                        tools:text="@string/Pork" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/buttonSalads"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:background="@null"
+                        app:srcCompat="@drawable/saladlong" />
+
+                    <ImageButton
+                        android:id="@+id/saladsgray"
+                        android:layout_width="360dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:background="@null"
+                        app:srcCompat="@drawable/graylong"
+                        tools:layout_editor_absoluteX="0dp"
+                        tools:layout_editor_absoluteY="423dp" />
+
+                    <TextView
+                        android:id="@+id/categorySalads"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/buttonSalads"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignStart="@+id/buttonSalads"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginStart="12dp"
+                        android:text="Salads"
+                        android:textColor="@android:color/white"
+                        android:textSize="24sp"
+                        tools:text="@string/Salads" />
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

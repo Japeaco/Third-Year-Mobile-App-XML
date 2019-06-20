@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.admin.easyeats.PastaBakeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="274dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="276dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/foodImg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/pastalong" />
+
+                <ImageButton
+                    android:id="@+id/pastagray2"
+                    android:layout_width="360dp"
+                    android:layout_height="50dp"
+                    android:layout_above="@+id/time"
+                    android:layout_alignLeft="@+id/foodImg"
+                    android:layout_alignStart="@+id/foodImg"
+                    android:layout_marginBottom="14dp"
+                    android:background="@null"
+                    app:srcCompat="@drawable/graylong"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="423dp" />
+
+                <TextView
+                    android:id="@+id/Name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/pastagray2"
+                    android:layout_alignLeft="@+id/foodImg"
+                    android:layout_alignStart="@+id/foodImg"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginStart="12dp"
+                    android:text="Pasta Bake"
+                    android:textColor="@android:color/white"
+                    android:textSize="24sp" />
+
+                <ImageButton
+                    android:id="@+id/staroff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/foodImg"
+                    android:layout_alignRight="@+id/foodImg"
+                    android:layout_alignTop="@+id/Name"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@null"
+                    app:srcCompat="@android:drawable/star_big_off" />
+
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/meal"
+                    android:layout_alignBottom="@+id/meal"
+                    android:layout_marginEnd="28dp"
+                    android:layout_marginRight="28dp"
+                    android:layout_toLeftOf="@+id/meal"
+                    android:layout_toStartOf="@+id/meal"
+                    android:text="15 Mins"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/meal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/staroff"
+                    android:layout_alignRight="@+id/staroff"
+                    android:layout_below="@+id/foodImg"
+                    android:layout_marginTop="20dp"
+                    android:text="Lunch"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/difficulty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/time"
+                    android:layout_alignBottom="@+id/time"
+                    android:layout_toEndOf="@+id/Name"
+                    android:layout_toRightOf="@+id/Name"
+                    android:text="Easy"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/serves"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/time"
+                    android:layout_alignBottom="@+id/time"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_toEndOf="@+id/foodImg"
+                    android:layout_toRightOf="@+id/foodImg"
+                    android:text="2"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/ingredientsbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/methodbtn"
+                    android:layout_alignBottom="@+id/methodbtn"
+                    android:layout_alignEnd="@+id/difficulty"
+                    android:layout_alignRight="@+id/difficulty"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginRight="12dp"
+                    android:text="ingredients"
+                    android:visibility="visible" />
+
+                <Button
+                    android:id="@+id/methodbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toLeftOf="@+id/staroff"
+                    android:layout_toStartOf="@+id/staroff"
+                    android:text="Method" />
+
+                <TextView
+                    android:id="@+id/category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/difficulty"
+                    android:layout_alignBottom="@+id/difficulty"
+                    android:layout_alignLeft="@+id/Name"
+                    android:layout_alignStart="@+id/Name"
+                    android:layout_marginLeft="9dp"
+                    android:layout_marginStart="9dp"
+                    android:text="Pasta"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ViewSwitcher
+                android:id="@+id/viewswitcher"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageView6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="30dp"
+                        app:srcCompat="@drawable/graylong" />
+
+                    <TextView
+                        android:id="@+id/Ingredient1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/Ingredient2"
+                        android:layout_alignStart="@+id/Ingredient2"
+                        android:layout_alignTop="@+id/imageView6"
+                        android:layout_marginTop="8dp"
+                        android:text="Pasta"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:id="@+id/imageView7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/imageView6"
+                        android:layout_marginTop="42dp"
+                        app:srcCompat="@drawable/graylong" />
+
+                    <TextView
+                        android:id="@+id/Ingredient2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/Ingredient3"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginStart="25dp"
+                        android:text="Cheese"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/Ingredient3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@+id/Ingredient2"
+                        android:layout_alignRight="@+id/Ingredient2"
+                        android:layout_alignTop="@+id/imageView7"
+                        android:layout_marginTop="11dp"
+                        android:text="Tomato"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:id="@+id/imageView8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/imageView7"
+                        android:layout_marginTop="42dp"
+                        app:srcCompat="@drawable/graylong" />
+
+                    <TextView
+                        android:id="@+id/Ingredient4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/Ingredient5"
+                        android:layout_alignLeft="@+id/Ingredient3"
+                        android:layout_alignStart="@+id/Ingredient3"
+                        android:layout_marginBottom="8dp"
+                        android:text="Parsley"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/Ingredient5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/Ingredient4"
+                        android:layout_alignStart="@+id/Ingredient4"
+                        android:layout_alignTop="@+id/imageView8"
+                        android:layout_marginTop="11dp"
+                        android:text="Pepper"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/Ingredient5"
+                        android:layout_alignStart="@+id/Ingredient5"
+                        android:layout_below="@+id/imageView8"
+                        android:layout_marginTop="12dp"
+                        android:text="TextView"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView17"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center_horizontal|center"
+                        android:text="TextView"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+
+            </ViewSwitcher>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

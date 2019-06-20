@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_favourites"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Favourites" />
+        <item
+            android:id="@+id/nav_all"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="All Recipes" />
+        <item
+            android:id="@+id/nav_category"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Category" />
+        <item
+            android:id="@+id/nav_search"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Search Ingrediants" />
+        <item
+            android:id="@+id/nav_breakfast"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Breakfast" />
+        <item
+            android:id="@+id/nav_lunch"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Lunch" />
+        <item
+            android:id="@+id/nav_dinner"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Dinner" />
+        <item
+            android:id="@+id/nav_dessert"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Dessert" />
+        <item
+            android:id="@+id/nav_vegetarian"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Vegetarian" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="About" />
+    </group>
+
+
+</menu>
